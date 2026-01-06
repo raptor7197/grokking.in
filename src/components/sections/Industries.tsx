@@ -47,7 +47,7 @@ export function Industries() {
                         </div>
                         <div className="p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors group">
                             <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">Smart Vision Tech</h3>
-                            <p className="text-zinc-400">We teach computers to see and understand the world - it&apos;s like giving them superpowers! 👀✨</p>
+                            <p className="text-zinc-400">We teach computers to see and understand the world - it&apos;s like giving them superpowers!</p>
                         </div>
                         <div className="p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors group">
                             <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">Automate Data Capture</h3>
