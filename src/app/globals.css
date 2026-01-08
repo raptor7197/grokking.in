@@ -1,73 +1,76 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-border: var(--border);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-border: var(--border);
 
-  --font-mono: var(--font-geist-mono);
-  --font-meow: var(--font-meow);
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: var(--font-geist-mono);
+    --font-meow: var(--font-meow);
+    --font-sans:
+        var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --primary: #5b21b6;
-  --primary-foreground: #fafafa;
-  --secondary: #f4f4f5;
-  --secondary-foreground: #18181b;
-  --accent: #f4f4f5;
-  --accent-foreground: #18181b;
-  --card: #ffffff;
-  --card-foreground: #09090b;
-  --border: #e4e4e7;
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+    --primary: #ca8a04;
+    --primary-foreground: #ffffff;
+    --secondary: #fefce8;
+    --secondary-foreground: #422006;
+    --accent: #fef08a;
+    --accent-foreground: #854d0e;
+    --card: #ffffff;
+    --card-foreground: #09090b;
+    --border: #e4e4e7;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #030014;
-    --foreground: #ededed;
-    --primary: #8b5cf6;
-    --primary-foreground: #ffffff;
-    --secondary: #1e1b4b;
-    --secondary-foreground: #fafafa;
-    --accent: #2e1065;
-    --accent-foreground: #fafafa;
-    /* Glassmorphism card variables */
-    --card: rgba(255, 255, 255, 0.05);
-    --card-foreground: #ededed;
-    --border: rgba(255, 255, 255, 0.1);
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+        --primary: #facc15;
+        --primary-foreground: #000000;
+        --secondary: #422006;
+        --secondary-foreground: #fafafa;
+        --accent: #713f12;
+        --accent-foreground: #fafafa;
+        /* Glassmorphism card variables */
+        --card: rgba(255, 255, 255, 0.05);
+        --card-foreground: #ededed;
+        --border: rgba(255, 255, 255, 0.1);
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
-  overflow-x: hidden;
-  selection-background-color: var(--primary);
-  selection-color: var(--primary-foreground);
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    selection-background-color: var(--primary);
+    selection-color: var(--primary-foreground);
 }
 
 /* Glassmorphism Utilities */
 .glass {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .glass-hover:hover {
-  background: rgba(255, 255, 255, 0.08);
-  /* Slightly lighter on hover */
-  border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+    /* Slightly lighter on hover */
+    border-color: rgba(255, 255, 255, 0.15);
 }
