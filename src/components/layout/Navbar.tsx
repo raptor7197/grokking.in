@@ -15,7 +15,7 @@ export function Navbar() {
       >
         <Link href="/" className="flex items-center gap-2">
           {/* LOGO PLACEHOLDER: Upload your logo to /public and uncomment the line below */}
-          {/* <Image src="/logo.png" alt="Company Logo" width={32} height={32} className="mr-2" /> */}
+           <img src="/grokking.jpeg" alt="Company Logo" width={32} height={32} className="mr-2" /> 
           <span className="text-lg font-bold tracking-tight text-white hover:text-primary transition-colors">
             Grokking<span className="text-primary">.in</span>
           </span>
